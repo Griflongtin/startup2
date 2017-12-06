@@ -1,0 +1,25 @@
+@mixin flex {
+    // write the css here
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin grid($flex) {
+    @if $flex {
+        @include flex;
+    } @else {
+        display: block;
+    }
+}
+
+@mixin box($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background-color: $background;
+}
+
+@mixin background-image($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

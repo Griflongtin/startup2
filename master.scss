@@ -1,0 +1,15 @@
+@import 'abstracts/modules', 'vendor/modules', 'base/modules', 'layout/modules', 'components/modules', 'pages/modules', 'themes/modules';
+
+.content-box-1 {
+  @include box(100px, 100px, $primary-color);
+}
+.content-box-2 {
+  @include box(100px, 100px, $secondary-color);
+}
+.content-box-3 {
+  @include box(100px, 100px, $accent-1);
+}
+
+.header-box {
+  @include background-image("../img/img/sw-hero-home.png");
+}
